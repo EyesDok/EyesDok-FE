@@ -1,0 +1,692 @@
+@import url('https://webfontworld.github.io/sunn/SUIT.css');
+
+
+#arrow2{
+  margin-bottom:55px;
+  width:35px;
+  height:35px;
+}
+
+#arrow1{
+  margin-bottom:55px;
+  width:35px;
+  height:35px;
+  
+}
+
+body{
+   margin: 0;
+   padding: 0;
+ }
+
+ a:link { 
+  color: #fff;
+  text-decoration: none;
+}
+
+ a:visited { 
+  color: #fff; 
+  text-decoration: none;}
+
+  a:hover{
+    color: #fff; 
+    text-decoration: none;
+  }
+ 
+ a{
+  text-decoration:none;
+ }
+ 
+ .container{
+  display:block;
+ }
+ /*nav*/
+ 
+ nav {
+   display: flex;
+height: 119px;
+flex-shrink: 0;
+   justify-content: center;
+   align-items: center;
+   margin: 0 auto; 
+   max-width: 200rem;
+   background: #000;
+ }
+ 
+ nav div{
+   flex-grow: 0.3;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   color: #fff;
+   font-size: 20px;
+   font-family: SUIT;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+ }
+ 
+ .navContainer1 > div{
+   flex-grow: 0.3;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   margin-left:170px;
+ }
+ 
+ .navContainer1{
+    
+   margin: 0 auto;
+   max-width: 100rem;
+   justify-content: center;
+   gap:20px;
+ }
+ 
+ .navContainer2{
+   margin: 0 auto;
+   max-width: 100rem;
+ }
+ 
+ .navContainer2 .login {
+    margin-left: 60px; /* 로그인 글자의 오른쪽 마진을 설정합니다. */
+ }
+ 
+ .navContainer2 .join {
+    margin-right: 60px; /* 회원가입 글자의 왼쪽 마진을 설정합니다. */
+ }
+ 
+ .navContainer2 > div {
+    flex-grow: 0.03;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+ }
+ 
+ #navTitle{
+   color: var(--main-bl, #737373);
+   text-align: center;
+   font-size: 32px;
+   font-family: 'KyoboHandwriting2022khn';
+   font-style: normal;
+   font-weight: 400;
+   line-height: 24px;
+ }
+
+ #navTitle:hover{
+   cursor:pointer;
+   color: #737373;
+ }
+
+ #NoonDDock,#family,#my{
+    color: #FFF;
+font-family: SUIT;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+ }
+
+ .login,.join{
+    color: #FFF;
+font-family: SUIT;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+
+ .parent-container {
+    position: relative;
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner {
+      background-size: contain; /* Switches to "contain" when the screen width is 768px or less */
+    }
+  }
+
+
+  .banner{
+    position:relative;
+
+  }
+
+  .logo-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.logo-text {
+    font-size: 1rem; 
+    color: white; 
+}
+
+
+
+  /*banner*/
+.picture{
+  
+  width:100%;
+  height:809px;
+  background: url("image\ 23.jpg") no-repeat center ;
+  }
+
+  @media screen and (max-width: 768px) {
+    .banner2 {
+      background-size: contain; 
+    }
+  }
+
+  .banner2 {
+    margin-top:140px;
+    width: 100%;
+    height: 245px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.79) 0%, rgba(0, 0, 0, 0.46) 52.95%, rgba(0, 0, 0, 0.18) 68.58%, rgba(217, 217, 217, 0.00) 82.65%, rgba(217, 217, 217, 0.00) 100%), url("banner2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+.picture2 img{
+  width: 380px;
+  height: 225px;
+  object-fit: cover;
+  margin-left:1100px;
+  }
+
+  .logo1{
+    position:absolute;
+    top:45%;
+    left:40%;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #FFF;
+font-family: SUIT;
+font-size: 70px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+  }
+
+  .logo2{
+    position:absolute;
+    top:58%;
+    left:33%;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #FFF;
+    font-family: SUIT;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .logo3{
+    position:absolute;
+    top:20%;
+    left:25%;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    color: #FCFAF6;
+font-family: Pretendard;
+font-size: 13px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+  }
+
+  .logo4{
+    position:absolute;
+    top:45%;
+    left:32%;
+    transform:translate(-50%,-50%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    color: #FCFAF6;
+font-family: Pretendard;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+  }
+  /*gallery*/
+.gallery{
+    margin:0 auto;
+}
+
+section{
+    display:block;
+}
+.titlebutton{
+    display: flex;
+  align-items: center; 
+  flex-direction: column;
+  justify-content: left; 
+  margin-right:1290px;
+}
+.galleryTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 100rem;
+    margin-top: 94px;
+    color: #000;
+font-family: SUIT;
+font-size: 28px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    transform: translateX(150px); 
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-width: 100rem;
+    margin-top: 20px;
+    gap:20px;
+    transform: translateX(160px); 
+}
+
+.custom-button {
+    border-radius: 60px;
+    border: 2px solid #00A507;
+    display: inline-flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    color: #000;
+font-family: SUIT;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.custom-button:hover {
+    background-color: #00A507; /* 마우스를 올렸을 때의 배경 색상 */
+    color: rgb(0, 0, 0); /* 마우스를 올렸을 때의 글자 색상 */
+}
+
+.gallerySub{
+  display: flex;
+  margin-top: 3px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  color: #737373;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  margin-bottom:50px;
+}
+
+.myLog{
+  position:absolute;
+  top:65%;
+  left:22.5%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 3px;
+  border: 1px solid #E3E3E3;
+  width: 260px;
+  height: 56px;
+}
+
+.myLog>span{
+  position:absolute;
+  top:30%;
+  left:27%;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.27px;
+}
+
+.myLog:hover{
+  cursor: pointer;
+}
+
+
+
+/*myPics*/
+.myPics {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  flex-direction: row;
+  align-items:center;
+  gap:47px;
+}
+
+
+
+
+.pic {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.myPics>img{
+  width: 247px;
+  height: 320px;
+}
+
+.pic:hover{
+  cursor:pointer;
+}
+
+.ex{
+  color: #333;
+  font-size: 16px;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.2px;
+}
+
+.drawer{
+  display: flex;
+  align-items: center;
+  color: #999;
+  text-align: right;
+  font-size: 13px;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+.drawer:hover{
+cursor:pointer;
+}
+
+.picEx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.picEx:hover{
+cursor:pointer;
+}
+
+.author{
+  margin-top: 7px;
+  color: #B5B5B5;
+  font-size: 16px;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.author:hover{
+cursor:pointer;
+}
+
+.explain{
+  margin-top: 14px;
+}
+
+ /*songList*/
+ .songList{
+  align-items:center;
+  justify-content:center;
+  display:flex;
+}
+
+.listFrame { 
+  width:983px;
+  height:60px;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 180px; 
+  margin-bottom:15px;
+}
+.rect { 
+  border-radius:500px;
+  background-color:#D9D9D9;
+  width:50px;
+  height:50px;
+}
+.rect:hover{
+  cursor:pointer;
+}
+.songtitle { 
+  color: #737373;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  text-align:center;
+  width:200px;
+  height:25px;
+}
+.songtitle:hover{
+  cursor:pointer;
+}
+.singer { 
+  color: #737373;
+  font-size: 20px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 21px;
+  width:180px;
+  height:25px;
+  text-align:center;
+}
+.singer:hover{
+  cursor:pointer;
+}
+ 
+ .like { 
+   width: 24px;
+   height: 24px;
+   height:18.350000381469727px;
+ }
+ 
+ .like:hover{
+   cursor: pointer;
+ }
+
+.picContainer1{
+    margin-left:30px;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+  margin-top:30px;
+}
+
+
+
+.picContainer2{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  gap:118px;
+  margin-top:50px;
+}
+
+.picAndNameContainer {
+    margin-top:59px;
+    display: flex;
+    justify-content: center;
+    gap: 36px; 
+  }
+  
+  .picAndName {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .musical{
+    color: #000;
+  font-family: SUIT;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: left; 
+  margin-right:50px;
+  width: 200px; 
+  }
+  
+  .name {
+    margin-right:15px;
+    color: #000;
+    font-family: SUIT;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+  }
+  
+
+
+.pictures{
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  gap:30px;
+}
+
+.explain1{
+  text-align: right;
+  color: var(--main-bl, #737373);
+  font-size: 20px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+
+.explain2{
+  text-align: left;
+  color: var(--main-bl, #737373);
+  font-size: 20px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
+}
+
+.perfume > img{
+  box-shadow: 3px 4px 12px 0px rgba(0, 0, 0, 0.10);
+  width: 268px;
+  height: 320px;
+}
+
+/*footer*/
+
+.footer{
+  align-items:center;
+  justify-content:center;
+  display: flex;
+  margin-top:168px;
+  margin-bottom:42px;
+  flex-direction: row;
+  border-top: 1px solid #B5B5B5;
+
+  color: #737373;
+  font-size: 11px;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.footerContainer1{
+  justify-content: flex-start;
+  margin-top: 45px;
+}
+
+.line{
+  margin-bottom: 45px;
+}
+
+
+.icon{
+  gap:12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.inform1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 24px;
+  flex-direction: row;
+  margin-bottom:12px;
+}
+
+.inform2{
+  margin-bottom:12px;
+}
+
+.point { 
+  background-color:rgba(115.00000074505806, 115.00000074505806, 115.00000074505806, 1);
+  width:4px;
+  height:4px;
+  border-top-left-radius:9999px;
+  border-top-right-radius:9999px;
+  border-bottom-left-radius:9999px;
+  border-bottom-right-radius:9999px;
+}
+
+.footerContainer2{
+  margin-bottom: 0px;
+}
+
+.inform5{
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap:12px;
+  margin-left: 452px;
+  text-align:right;
+  margin-right: 
+}
+
