@@ -180,6 +180,7 @@ line-height: normal;
   }
 
   .banner2 {
+    position:relative;
     margin-top:140px;
     width: 100%;
     height: 245px;
@@ -234,36 +235,35 @@ line-height: normal;
 
   .logo3{
     position:absolute;
-    top:20%;
-    left:25%;
-    transform:translate(-50%,-50%);
+    top:18%;
+    left:22.5%;
+  
     justify-content: center;
     align-items: center;
     display: flex;
 
-    color: #FCFAF6;
-font-family: Pretendard;
-font-size: 13px;
+    color: #FFF;
+font-family: SUIT;
+font-size: 30px;
 font-style: normal;
-font-weight: 400;
-line-height: 21px;
+font-weight: 800;
+line-height: 52px; /* 173.333% */
   }
 
   .logo4{
     position:absolute;
-    top:45%;
-    left:32%;
-    transform:translate(-50%,-50%);
+    top:42%;
+    left:22.5%;
     justify-content: center;
     align-items: center;
     display: flex;
 
-    color: #FCFAF6;
-font-family: Pretendard;
-font-size: 18px;
+    color: #FFF;
+font-family: SUIT;
+font-size: 20px;
 font-style: normal;
-font-weight: 400;
-line-height: 27px;
+font-weight: 500;
+line-height: 30px; /* 150% */
   }
   /*gallery*/
 .gallery{
@@ -316,7 +316,7 @@ line-height: normal;
     text-decoration: none; 
     color: #000;
 font-family: SUIT;
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -344,29 +344,27 @@ line-height: normal;
 
 .myLog{
   position:absolute;
-  top:65%;
+  top:75%;
   left:22.5%;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  border-radius: 3px;
-  border: 1px solid #E3E3E3;
-  width: 260px;
-  height: 56px;
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+  background: #00A507;
+  width: 108px;
+  height: 40px;
 }
 
 .myLog>span{
   position:absolute;
   top:30%;
-  left:27%;
-  color: white;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Noto Sans KR";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0.27px;
+  left:25%;
+  color: #FFF;
+font-family: SUIT;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 
 .myLog:hover{
@@ -688,5 +686,51 @@ cursor:pointer;
   margin-left: 452px;
   text-align:right;
   margin-right: 
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #F4F4F4;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 240px;
+}
+
+.container1,
+.container2 {
+  width: 50%; 
+  display: flex;
+  flex-direction: column; 
+}
+
+.container1 {
+  text-align: left;
+  margin-top:25px;
+}
+
+.container2 {
+  text-align: right;
+}
+
+.inform1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 12px;
+}
+
+.inform2 {
+  margin-bottom: 12px;
+}
+
+.inform5 {
+  text-align: right; 
+  margin-top: -60px; 
+  line-height:1.5;
 }
 
