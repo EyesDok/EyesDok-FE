@@ -264,6 +264,8 @@ section{
   margin-right:1290px;
 }
 .galleryTitle {
+  margin-left:120px;
+  width:300px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -280,6 +282,7 @@ line-height: normal;
 
 
 .button-container {
+  margin-left:60px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -290,6 +293,7 @@ line-height: normal;
 }
 
 .custom-button {
+  width:80px;
     border-radius: 60px;
     border: 2px solid #00A507;
     display: inline-flex;
