@@ -126,6 +126,51 @@ line-height: normal;
 
 
   /*mainbanner*/
+  /* header styling */
+/* header styling */
+/* header styling */
+header {
+  background-color: #001853;
+}
+
+#nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  color: white;
+  padding: 10px 0;
+  max-width: 1200px; /* 조정 가능한 최대 너비 */
+  margin: 0 auto; /* 중앙 정렬 */
+}
+
+#nav > div {
+  display: flex;
+  align-items: center;
+}
+
+#nav > div:first-child {
+  justify-content: flex-start;
+}
+
+#nav > div:nth-child(2) {
+  justify-content: center;
+  flex-grow: 1; /* 중앙 항목을 중앙에 위치시킴 */
+}
+
+#nav > div:last-child {
+  justify-content: flex-end;
+}
+
+#nav div {
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* 로그인과 회원가입을 위한 별도 스타일 */
+#nav .login-join {
+  display: flex;
+  gap: 10px;
+}
 
   .banner{
     position:relative;
