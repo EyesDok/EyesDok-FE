@@ -6,110 +6,128 @@ body{
    padding: 0;
  }
 
-/*header+nav*/
+ /*header+nav*/
+ #NoonDDock.underline {
+  position: relative;
+}
 
- a:link { 
-  color: #fff;
+#NoonDDock.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -42px; 
+  left: 15px;
+  width: 120px;
+height: 6.041px;
+flex-shrink: 0;
+  background-color: #00FF00; 
+}
+
+
+a:link { 
+color: #fff;
+text-decoration: none;
+}
+
+a:visited { 
+color: #fff; 
+text-decoration: none;}
+
+a:hover{
+  color: #fff; 
   text-decoration: none;
 }
 
- a:visited { 
-  color: #fff; 
-  text-decoration: none;}
+a{
+text-decoration:none;
+}
 
-  a:hover{
-    color: #fff; 
-    text-decoration: none;
-  }
- 
- a{
-  text-decoration:none;
- }
- 
- .container{
-  display:block;
- }
- /*nav*/
- 
- nav {
-   display: flex;
+.container{
+display:block;
+}
+/*nav*/
+
+nav {
+  display: flex;
 height: 119px;
 flex-shrink: 0;
-   justify-content: center;
-   align-items: center;
-   margin: 0 auto; 
-   max-width: 200rem;
-   background: #000;
- }
- 
- nav div{
-   flex-grow: 0.3;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding-right:10px;
-   color: #fff;
-   font-size: 20px;
-   font-family: SUIT;
-   font-style: normal;
-   font-weight: 400;
-   line-height: 24px;
- }
- 
- .navContainer1 > div{
-   flex-grow: 0.3;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   margin-left:115px;
- }
- 
- .navContainer1{
-    
-   margin: 0 auto;
-   max-width: 100rem;
-   justify-content: center;
-   gap:20px;
- }
- 
- .navContainer2{
-   margin: 0 auto;
-   max-width: 100rem;
- }
- 
- .navContainer2 .login {
-    margin-left: 60px; 
- }
- 
- .navContainer2 .join {
-    margin-right: 60px; 
- }
- 
- .navContainer2 > div {
-    flex-grow: 0.03;
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
- }
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; 
+  max-width: 200rem;
+  background: #000;
+}
+
+nav div{
+ flex-grow: 0.3;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ color: #fff;
+ font-size: 20px;
+ font-family: SUIT;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 24px;
+}
+
+.navContainer1 > div{
+ flex-grow: 0.3;
+ display: flex;
+ justify-content: flex-end;
+ align-items: center;
+ margin-left:115px;
+}
+
+.navContainer1{
+  
+ margin: 0 auto;
+ max-width: 100rem;
+ justify-content: center;
+ gap:20px;
+}
+
+.navContainer2{
+ margin: 0 auto;
+ max-width: 100rem;
+}
+
+.navContainer2 .login {
+  margin-left: 60px; 
+}
+
+.navContainer2 .join {
+  margin-right: 60px; 
+}
+
+.navContainer2 > div {
+  flex-grow: 0.03;
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
 
 
- #NoonDDock,#family,#my{
-    color: #FFF;
+#NoonDDock,#family,#my{
+  color: #FFF;
 font-family: SUIT;
 font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
- }
+}
 
- .login,.join{
-    color: #FFF;
+.login,.join{
+  color: #FFF;
 font-family: SUIT;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
- }
+}
+
+
+
 
   
 
@@ -125,52 +143,6 @@ line-height: normal;
 }
 
 
-  /*mainbanner*/
-  /* header styling */
-/* header styling */
-/* header styling */
-header {
-  background-color: #001853;
-}
-
-#nav {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.4rem;
-  color: white;
-  padding: 10px 0;
-  max-width: 1200px; /* 조정 가능한 최대 너비 */
-  margin: 0 auto; /* 중앙 정렬 */
-}
-
-#nav > div {
-  display: flex;
-  align-items: center;
-}
-
-#nav > div:first-child {
-  justify-content: flex-start;
-}
-
-#nav > div:nth-child(2) {
-  justify-content: center;
-  flex-grow: 1; /* 중앙 항목을 중앙에 위치시킴 */
-}
-
-#nav > div:last-child {
-  justify-content: flex-end;
-}
-
-#nav div {
-  padding: 0 10px;
-  cursor: pointer;
-}
-
-/* 로그인과 회원가입을 위한 별도 스타일 */
-#nav .login-join {
-  display: flex;
-  gap: 10px;
-}
 
   .banner{
     position:relative;
