@@ -20,7 +20,7 @@ body {
     content: '';
     position: absolute;
     bottom: -42px; 
-    left: 35px;
+    left: 15px;
     width: 120px;
 height: 6.041px;
 flex-shrink: 0;
@@ -81,7 +81,7 @@ flex-shrink: 0;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   margin-left:150px;
+   margin-left:115px;
  }
  
  .navContainer1{
