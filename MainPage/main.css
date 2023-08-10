@@ -47,7 +47,7 @@ flex-shrink: 0;
    display: flex;
    justify-content: center;
    align-items: center;
- 
+   padding-right:10px;
    color: #fff;
    font-size: 20px;
    font-family: SUIT;
@@ -61,7 +61,7 @@ flex-shrink: 0;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   margin-left:157px;
+   margin-left:110px;
  }
  
  .navContainer1{
