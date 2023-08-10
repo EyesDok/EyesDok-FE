@@ -60,7 +60,7 @@ flex-shrink: 0;
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   margin-left:170px;
+   margin-left:157px;
  }
  
  .navContainer1{
@@ -157,7 +157,7 @@ line-height: normal;
   .logo2{
     position:absolute;
     top:58%;
-    left:33%;
+    left:31.2%;
     transform:translate(-50%,-50%);
     justify-content: center;
     align-items: center;

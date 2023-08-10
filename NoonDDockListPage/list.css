@@ -6,7 +6,6 @@
 body {
     
   margin: 0;
-  padding: 0;
   position: relative; 
   }
 
@@ -17,18 +16,15 @@ body {
 }
 
 #NoonDDock.underline::after {
-  content: '';
-  position: absolute;
-  bottom: -42px;
-  left: 35px; /* 작은 화면에 적용될 기본값 */
-  width: 120px;
-  height: 6.041px;
-  flex-shrink: 0;
-  background-color: #00FF00;
+    content: '';
+    position: absolute;
+    bottom: -42px; 
+    left: 35px;
+    width: 120px;
+height: 6.041px;
+flex-shrink: 0;
+    background-color: #00FF00; 
 }
-
-
-
 
 
  a:link { 
@@ -147,6 +143,25 @@ line-height: normal;
     color: white; 
 }
 
+.titlecon{
+  justify-content: center;
+  text-align:center;
+  align-items: center;
+  display:flex;
+}
+
+
+.maintitle{
+  margin-top: 100px;
+  width:180px;
+  height:43px;
+  color: #000;
+font-family: SUIT;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
 
   /*mainbanner*/
 
@@ -244,8 +259,8 @@ section{
   margin-right:1290px;
 }
 .galleryTitle {
-  margin-left:120px;
-  width:300px;
+  margin-left:310px;
+  width:500px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -382,6 +397,11 @@ background: #F4F4F4;
 .imgContainer {
     position: relative; 
   }
+
+  .imgContainer > img{
+    width:361px;
+    height:430px;
+  }
   
   .noon-button {
     gap:3px;
@@ -418,16 +438,15 @@ flex-shrink: 0;
 /*select*/
 
 #divSelectors {
-    
-    margin:100px auto 0;
+    margin:60px auto 0;
     justify-content: center;
     align-items: center;
     display:flex;
     gap:24px;
     display: flex;
     flex-direction: row;
-    width: 61.5vw;
-    padding: 6vh 10vw 6vh 10vw;
+    width: 1176px;
+    height:72px;
     
 }
 
