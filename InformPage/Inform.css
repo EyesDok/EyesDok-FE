@@ -12,15 +12,20 @@ body {
 
 /*header+nav*/
 
-#NoonDDock.underline {
+#NoonDDock {
+  position: relative;
+}
+
+#NoonDDock.underline a {
     position: relative;
 }
 
-#NoonDDock.underline::after {
+#NoonDDock.underline a::after {
     content: '';
     position: absolute;
-    bottom: -42px; 
-    left: 15px;
+    bottom: -43px; 
+    left: 50%;
+    transform: translateX(-50%);
     width: 120px;
 height: 6.041px;
 flex-shrink: 0;
@@ -52,14 +57,14 @@ flex-shrink: 0;
  /*nav*/
  
  nav {
-    display: flex;
- height: 119px;
- flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; 
-    max-width: 200rem;
-    background: #000;
+  display: flex;
+  height: 119px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100vw; 
+  background: #000;
   }
 
  nav div{
@@ -164,87 +169,26 @@ font-weight: 700;
 line-height: normal;
 }
 
-  /*mainbanner*/
-
-  .banner{
-    position:relative;
-
-  }
-
-  .picture {
-    width: 100%;
-    height: 412px;
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.46) 52.95%, rgba(0, 0, 0, 0.18) 68.58%, rgba(217, 217, 217, 0.00) 82.65%, rgba(217, 217, 217, 0.00) 100%), url("banner.png") no-repeat center;
-  }
-  
-  .text-container {
-    position: absolute;
-    top: 47%;
-    left: 39%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column; 
-    justify-content: center;
-    align-items: center;
-}
-
-.upper-text {
-    position: absolute;
-    top: -25%;
-    left: 11.5%;
-    transform: translate(-50%, -50%);
-    display: flex; 
-    flex-direction: row;
-}
-
-.greentext, .whitetext, .logo1 {
-    font-family: SUIT;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-}
-
-.greentext {
-    color: #01D20A;
-}
-
-.whitetext {
-    color: #fff;
-}
-
-.logo1 {
-    color: #fff;
-    font-weight: 700;
-}
-
-.write-button {
-    position: absolute;
-    top: 180%;
-    left: 11.5%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    width: 160px;
-    height: 40px;
-    padding: 12px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
-    background: #00CB08;
-    color: #000000;
-    border: none;
-    cursor: pointer;
-    font-family: SUIT;
-    font-size: 16px;
-}
-
-
+ 
   /*gallery*/
 .gallery{
-    margin:0 auto;
+  width: 80vw;
+  margin: 3vh auto 0px;
+  text-align: center;
+  overflow: hidden;
 }
 
+.sec1{
+    width:100vw;
+      margin:auto;
+
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto; /* 가운데 정렬 */
+  overflow: hidden; /* 내부 요소가 넘치지 않도록 설정 */
+}
 section.gallery{
     position:relative;
 }
@@ -257,14 +201,15 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0 auto; /* 왼쪽과 오른쪽 마진을 자동으로 설정하여 중앙 정렬 */
+    margin: 0 auto; 
 }
 
 .button-container {
     display: flex;
-    justify-content: center; /* 버튼을 컨테이너의 중앙에 배치 */
+    justify-content: center; 
     align-items: center;
     margin-top: 20px;
+   
     gap: 20px;
 }
 
@@ -323,53 +268,56 @@ line-height: normal;
     transform: translateX(150px); 
 }
 
-
+.center-section{
+  width:80vw;
+}
 
 .picAndNameContainer {
-    margin-top:59px;
-    display: flex;
-    justify-content: center;
-    gap: 48px; 
-  }
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 6vh;
+  max-width:80vw;
+}
+
+
   
-  .picAndName {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.picAndName {
+  width: 20vw; /* 고정 너비 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.infor1{
+  text-align:left;
+  color: #000;
+  font-family: SUIT;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
   
-  .center-section {
-    /* 기타 스타일링 */
-}
-
-.info-container {
-    display: flex;
-    flex-direction: row; /* 이미지 컨테이너의 경우 이미 row로 설정되어 있을 것입니다. */
-    justify-content: flex-start; /
-    flex-direction: column; /* 정보 컨테이너의 경우 열 방향으로 설정 */
-}
-
-.row {
-    display: flex;
-    justify-content: flex-start; /* 여기도 왼쪽 정렬 */
-}
-
-.info-item {
-    flex: 1; /* 각 항목의 너비를 동일하게 설정 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-}
-
 
   .spot{
+    margin:30px 0 auto;
+    text-align:left;
     color: #000;
-  font-family: SUIT;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-align: left; 
-  margin-right:50px;
-  width: 300px; 
+font-family: SUIT;
+font-size: 1.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+
+  .infor{
+    color: #000;
+font-family: SUIT;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   }
   
   .name {
@@ -419,9 +367,9 @@ background: #F4F4F4;
     position: relative; 
   }
 
-  .imgContainer > img{
-    width:361px;
-    height:430px;
+  .imgContainer > img {
+    width: 18vw; /* 이미지의 너비를 부모 요소의 100%로 설정 */
+    height: 45vh;
   }
   
   .noon-button {
@@ -435,8 +383,8 @@ background: #F4F4F4;
     border-radius: 3px;
     background: #D0D0D0;
     cursor: pointer;
-    display: flex;       /* Flexbox를 사용하여 내용을 정렬 */
-    justify-content: center; /* 내용을 가운데로 정렬 */
+    display: flex;     
+    justify-content: center; 
     align-items: center;
   }
   
@@ -448,64 +396,209 @@ flex-shrink: 0;
   }
   
   .noon-number {
-    color: #000;         /* 숫자의 색상 */
-    font-size: 14px;     /* 숫자의 글꼴 크기 */
+    color: #000;        
+    font-size: 14px;    
   }
   
   .noon-button.active {
     background: #00CB08;
   }
 
-/*select*/
+  /*chat*/
 
-#divSelectors {
-    margin:60px auto 0;
+  .chat {
+    width: 80vw;
+    margin-top: 10vh;
+    margin-bottom:10vh;
+    margin-left:17vw;
     justify-content: center;
+    text-align: left; /* 내부 요소 가운데 정렬 */
+    overflow: hidden;
     align-items: center;
-    display:flex;
-    gap:24px;
+}
+
+  .gallery::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -70px; 
+    left: 0;
+    right: 0;
+    height: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+  }
+  
+  #comment{
+    margin-top:5vh;
+    font-size: 3rem;
+    color: #000;
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    color: #000;
+font-family: SUIT;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+  
+  #comment-write{
+    width: 61.5vw;
     display: flex;
     flex-direction: row;
-    width: 1176px;
-    height:72px;
-    
-}
+    position: relative;
+    margin-top: 5vh;
+    align-items: center;
+    margin-bottom: 3vh;
+  }
 
-#divSelectors select{
-    flex-grow: 1;
-    height: 7vh;
-    border-radius: 12px;
-    border: 1px solid #000;
-    background: #FFF;
-    color: #525151;
-    font-size: 1.4rem;
-    padding-left: 20px;
-    background-size: 15px;
-    -o-appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    cursor: pointer;
-    background: url(Vector\ 64.png) calc(95% - 5px) no-repeat;
-}
-
-
+  #comment-write1{
+    width: 61.5vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 0vh;
+    align-items: center;
+    margin-bottom: -6vh;
+  }
   
+  #cuser1{
+    width: 72px;
+height: 72px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  #comment-write > textarea{
+    flex-grow: 1;
+    margin-left: 2vw;
+    height: 15vh;
+    outline: none;
+    border: none;
+    resize: none;
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.10);
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding: 2vh 2vw 2vh 2vw;
+  }
+  #cbtn1{
+    display: flex;
+    display: flex;
+    padding: 6px 10px;
+    position: absolute;
+    right: 2vh;
+    bottom: 2vh;
+    color: white;
+    border-radius: 5vh;
+    background: #000;
+    
+    text-align: center;
+    cursor: pointer;
+  }
+  #cbtn1:hover{
+    background: #00091f;
+  }
+  
+  #comment-box{
+    width: 55vw;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 4vh;
+    margin-bottom: 6vh;
+  }
+  #comment-box #cuser{
+    width: 40px;
+    height: 40px;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  #comment-box > div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+  #comment-box #divWriter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #creator1{
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  #date1{
+    color: #7E7E7E;
+    font-size: 1rem;
+    padding-left: 1.5vh;
+    font-weight: 400;
+  }
+  #ctext2{
+    flex-grow: 1;
+    height: 10vh;
+    font-size: 1.3rem;
+    background: #FFF;
+    color: #7E7E7E;
+    font-size: 1.3rem;
+    padding: 2vh 2vw 2vh 2vw;
+    margin-top: 5vh;
+  }
+
+  #text-container{
+    margin-top:-0.5vh;
+  }
+
+  #text-container1{
+    margin-top:3vh;
+  }
+  
+  #buttons-container {
+    margin: 10vh 6vh 0 6vh;
+    display: flex;
+    width: 100%;
+    margin-left:12vh;
+    gap:4%;
+}
+
+.custom-button1 {
+    width:25vw;
+    height: 9vh;
+    background: #00A507;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FEE;
+font-family: SUIT;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+
 
 
 /* footer */
 footer {
   margin-top:300px;
-  width: 100vw; /* 뷰포트 너비에 꽉 차도록 설정 */
+  width: 100vw; 
   height: 200px;
   background-color: #F4F4F4;
-  box-sizing: border-box; /* 패딩과 테두리가 전체 크기에 포함되도록 설정 */
+  box-sizing: border-box; 
 }
 
 .footercontainer {
   display: flex;
   justify-content: space-between;
-  padding: 24px 5vw; /* 좌우 패딩을 뷰포트 너비의 5%로 설정 */
+  padding: 24px 5vw; 
 }
 
 .container1,
