@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>눈똑들이다</title>
     <link rel="stylesheet" href="join.css">
+    
 </head>
 <body>
-    <div class="container">
-        <div class="circle">
-            <div class="content">
-                <img src="NoonDDock.jpg" class="logo">
-                    <p class="title">로그인 | 회원가입</p>
-                    <div class="text">
-                    <div class="input">
-                    <div class="input-field1">
-                        <label for="user-name">이름</label>
-                        <input type="text" id="user-name" name="NAME" placeholder="">
-                    </div>
-                    <p class="possible">*150자 이하 문자, 숫자, @/./+/-/_ 만 가능합니다.</p>
-                    <div class="input-field2">
-                        <label for="user-email">이메일</label>
-                        <input type="text" id="user-email" name="EM" placeholder="">
-                    </div>
-                </div>
-                </div>
-            </div>
-        </div>        
-        <div class="rectangle">
-            <div class="text2">
 
-                <div class="input2">
-                <div class="input-field3">
-                    <label for="user-pw">비밀번호</label>
-                    <input type="text" id="user-pw" name="PW" placeholder="">
-                </div>
-                <div class="limit">
-                <p class="numlimit">*최소 8자 이상</p>
-                <p class="pwlimit">*숫자로만 이루어진 비밀번호는 사용할 수 없습니다.(영어+숫자, 영어+부호 영어만 가능)</p>
-            </div>
-                <div class="input-field4">
-                    <label for="user-pwconfirm">비밀번호 확인</label>
-                    <input type="text" id="user-pwconfirm" name="PW-CF" placeholder="">
-                </div>
-            </div>
+    <section class="container forms">
+        <div class="form login">
+            <div class="form-content">
+                <img src="NoonDDock.jpg">
+                <header> <a href="/LoginPage/login.html">로그인</a> | <a href="/JoinPage/join.html"><span>회원가입</span></a></header>
+                <form action="#">
+                    <div class="field input-field">
+                        <div class="label-container">
+                            <label for="name">이름</label>
+                        </div>
+                        <input type="name" id="name" placeholder="*150자 이하 문자, 숫자, @/./+/-/_ 만 가능합니다." class="name">
+                    </div>
+                    
+                    <div class="field input-field">
+                        <div class="label-container">
+                            <label for="email">이메일</label>
+                        </div>
+                        <input type="email" id="email" placeholder="" class="email">
+                    </div>
+                    
+                    <div class="field input-field">
+                        <div class="label-container">
+                            <label for="password">비밀번호</label>
+                        </div>
+                        <input type="password" id="password" placeholder="*최소 8자 이상" class="password">
+                    </div>
+                    
+                    <div class="field input-field">
+                        <div class="label-container">
+                            <label for="passwordcf">비밀번호 확인</label>
+                        </div>
+                        <input type="password" id="passwordcf" placeholder="" class="passwordcf">
+                    </div>
+                    
+                   
+                    <div class="field input-field">
+                        <div class="label-container">
+                            <label for="member-choice">회원 선택</label>
+                        </div>
+                        <div class="member-choice-container">
+                            <input type="radio" id="senior-member" name="member-type" class="choice-radio">
+                            <label for="senior-member" class="choice-label">시니어 회원</label>
+                            
+                            <input type="radio" id="child-member" name="member-type" class="choice-radio">
+                            <label for="child-member" class="choice-label">자녀 회원</label>
+                        </div>
+                    </div>
 
-            <div class="memberbutton">
-                <label for="user-member">회원선택</label>
-                <div class="membership">
-                    <input type="radio" id="senior" name="membership" value="senior" class="hidden-radio">
-                    <label for="senior" class="senior-button">시니어 회원</label>
-                    <input type="radio" id="child" name="membership" value="child" class="hidden-radio">
-                    <label for="child" class="child-button">자녀 회원</label>
-                </div>
-            </div>
-        
-            <button type="submit" id="login-button" name="Login">회원가입하기</button>
-        </div>
-        </div>
-        </div>
-    </div>
+                    <div class="field button-field">
+                        <button type="submit">회원가입하기</button>
+                    </div>
+                    
+                </form>
+                
+                
+
+               
+
+    </section>
 
     <footer>
         <div class="footercontainer">
@@ -83,9 +91,7 @@
                 FE: 이나경, 이수아</span>
         </div>
     </div>
-        
-            
     </footer>
-    
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
