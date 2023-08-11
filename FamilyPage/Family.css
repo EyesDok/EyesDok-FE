@@ -242,7 +242,7 @@ nav div{
 }
 
 .category {
-  background: url('./img/Vector 65.svg') no-repeat;
+  background: url(Vector\ 64.png) calc(95% - 5px) no-repeat;
   background-position: calc(100% - 30px) center;
   padding-right: 40px;
   appearance: none;
