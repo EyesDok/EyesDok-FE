@@ -23,7 +23,7 @@ body {
 #NoonDDock.underline a::after {
     content: '';
     position: absolute;
-    bottom: -43px; 
+    bottom: -45px; 
     left: 50%;
     transform: translateX(-50%);
     width: 120px;
@@ -226,56 +226,54 @@ line-height: normal;
 
 
   /*gallery*/
-.gallery{
-    margin:0 auto;
-}
 
-section.gallery{
-    position:relative;
-}
-section{
-    display:block;
-}
+  
+  section.gallery{
+      position:relative;
+  }
+  section{
+      display:block;
+  }
 
-.titlebutton{
-    display: flex;
-  align-items: center; 
-  flex-direction: column;
-  justify-content: left; 
-  margin-right:1290px;
-}
 .galleryTitle {
-  margin-left:120px;
-  width:300px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    max-width: 100rem;
-    margin-top: 94px;
-    color: #000;
-font-family: SUIT;
-font-size: 28px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-    transform: translateX(150px); 
+  width: 100%; 
+  margin-left:7.5vw;
+  font-family: SUIT;
+  font-size: 1.7vw;
+  font-weight: 600;
+  margin-top: 10vh;
+  color: #000;
+}
+
+.title {
+  width: 80vw;
+  margin: 3vh auto 0;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery{
+  width: 80vw;
+  margin: 3vh auto 0px;
+  text-align: center;
+  overflow: hidden;
+}
+.titlebutton {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: left;
 }
 
 .galleryTitle2 {
-    margin-left:810px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    width:1000px;
-    max-width: 1000rem;
-    margin-top: 94px;
-    color: #000;
-font-family: SUIT;
-font-size: 28px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-    transform: translateX(150px); 
+  width: 100%; /* 1000px나 100rem 제한을 제거하였습니다. */
+  font-family: SUIT;
+  font-size: 1.7vw;
+  font-weight: 600;
+  margin-left:7.5vw;
+  margin-top: 10vh;
+  color: #000;
 }
 
 
@@ -311,24 +309,32 @@ line-height: normal;
 }
 
 
+.center-section{
+  width:80vw;
+}
+
 .picAndNameContainer {
-    margin-top:59px;
-    display: flex;
-    justify-content: center;
-    gap: 48px; 
-  }
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 5vh;
+  max-width:80vw;
+}
+
+
   
-  .picAndName {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.picAndName {
+  width: 20vw; /* 고정 너비 설정 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
   
 
   .spot{
     color: #000;
   font-family: SUIT;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -366,13 +372,13 @@ line-height: normal;
 padding: 12px 20px;
 justify-content: center;
 align-items: center;
-gap: 10px;
+gap: 1vw;
 background: #F4F4F4;
     display: inline-flex;
     text-decoration: none;
     cursor: pointer;
-    width:320px;
-    height:20px;
+    width:17vw;
+    height:2.3vh;
 }
 
 .detail-button:hover, .add-button:hover {
@@ -381,8 +387,13 @@ background: #F4F4F4;
 }
 
 .imgContainer {
-    position: relative; 
-  }
+  position: relative; 
+}
+
+.imgContainer > img {
+  width: 19.5vw; /* 이미지의 너비를 부모 요소의 100%로 설정 */
+  height: 45vh;
+}
   
   .noon-button {
     gap:3px;
@@ -420,14 +431,15 @@ flex-shrink: 0;
 
 #divSelectors {
     
-    margin:100px auto 0;
+    margin:10vh auto 0;
+    margin-left:-5vh;
     justify-content: center;
     align-items: center;
     display:flex;
     gap:24px;
     display: flex;
     flex-direction: row;
-    width: 61.5vw;
+    width: 64.5vw;
     padding: 6vh 10vw 6vh 10vw;
     
 }
