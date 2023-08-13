@@ -13,25 +13,25 @@ body {
 
 /*header+nav*/
 
-#family {
-  position: relative;
-}
-
-#family.underline a {
-  position: relative;
-}
-
-#family.underline a::after {
-  content: '';
-  position: absolute;
-  bottom: -45px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 140px;
+#NoonDDock {
+    position: relative;
+  }
+  
+  #NoonDDock.underline a {
+      position: relative;
+  }
+  
+  #NoonDDock.underline a::after {
+      content: '';
+      position: absolute;
+      bottom: -45px; 
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
   height: 6.041px;
   flex-shrink: 0;
-  background-color: #00FF00;
-}
+      background-color: #00FF00; 
+  }
 
 
 a:link {
@@ -199,6 +199,20 @@ nav div{
   padding-left: 25px;
 }
 
+.city{
+    width: 31vw;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 2px solid #797979;
+}
+
+.cate{
+    display:flex;
+    
+    gap:3vw;
+}
+
 .family-layout{
   width: 65vw;
   height: 72px;
@@ -241,15 +255,48 @@ nav div{
   opacity: 0.8;
 }
 
-.category {
-  background: url(Vector\ 64.png) calc(95% - 5px) no-repeat;
-  background-position: calc(100% - 30px) center;
-  padding-right: 40px;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  position: relative;
-  display: inline-block;
+.city {
+    background: url(Vector\ 64.png) calc(95% - 5px) no-repeat;
+    background-position: calc(100% - 30px) center;
+    padding-right: 40px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+    display: inline-block;
+  }
+
+.piccontainer{
+    gap:28px;
+    margin-top:48px;
+    display:flex;
+    flex-direction:row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right:10vh;
+}
+
+.blank{
+    width: 13.5vw;
+    height: 28vh;
+flex-shrink: 0;
+border-radius: 13px;
+border: 1px solid #626262;
+background: #FFF;
+}
+
+.blank img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grey{
+    border-radius: 13px;
+    width: 13.5vw;
+height: 28vh;
+flex-shrink: 0;
+background-color: grey;
 }
 
 
