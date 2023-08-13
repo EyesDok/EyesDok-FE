@@ -230,9 +230,11 @@ line-height: normal;
   
   section.gallery{
       position:relative;
+      
   }
   section{
       display:block;
+      margin-left:12vw;
   }
 
 .galleryTitle {

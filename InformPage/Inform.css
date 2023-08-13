@@ -227,6 +227,7 @@ section.gallery{
 }
 section{
     display:block;
+    margin-left:1.5vw;
 }
 
 
@@ -301,7 +302,7 @@ line-height: normal;
     text-align:left;
     color: #000;
 font-family: SUIT;
-font-size: 1.8rem;
+font-size: 1.7rem;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -345,8 +346,8 @@ line-height: normal;
   }
 
   .imgContainer > img {
-    width: 18vw; /* 이미지의 너비를 부모 요소의 100%로 설정 */
-    height: 45vh;
+    width: 19.5vw; /* 이미지의 너비를 부모 요소의 100%로 설정 */
+  height: 45vh;
   }
   
   
@@ -369,7 +370,7 @@ line-height: normal;
     width: 80vw;
     margin-top: 10vh;
     margin-bottom:10vh;
-    margin-left:17vw;
+    margin-left:17.6vw;
     justify-content: center;
     text-align: left; /* 내부 요소 가운데 정렬 */
     overflow: hidden;
@@ -526,8 +527,8 @@ height: 72px;
 }
 
 .custom-button1 {
-    width:25vw;
-    height: 9vh;
+    width:24vw;
+    height: 8vh;
     background: #00A507;
     border: none;
     text-align: center;
@@ -537,7 +538,7 @@ height: 72px;
     align-items: center;
     color: #FEE;
 font-family: SUIT;
-font-size: 28px;
+font-size: 1.8vw;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
