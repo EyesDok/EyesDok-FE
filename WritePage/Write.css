@@ -226,6 +226,10 @@ nav div{
   margin-top : 48px;
 }
 
+
+
+
+
 .btn-container{
   display: flex;
   justify-content: center;
@@ -267,36 +271,47 @@ nav div{
   }
 
 .piccontainer{
-    gap:28px;
-    margin-top:48px;
+  width:65vw;
+    gap:35px;
     display:flex;
+    margin-top:48px;
     flex-direction:row;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-right:10vh;
 }
 
-.blank{
-    width: 13.5vw;
-    height: 28vh;
-flex-shrink: 0;
-border-radius: 13px;
-border: 1px solid #626262;
-background: #FFF;
+.blank {
+  width: 13vw;
+  height: 28vh;
+  flex-shrink: 0;
+  border-radius: 13px;
+  border: 1px solid #626262;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 수평 가운데 정렬 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  overflow: hidden; /* 내용이 넘치는 경우를 방지 */
 }
 
-.blank img{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.blank img {
+  width: 35%; /* 이미지의 크기 조절 */
+  max-width: 100px; /* 이미지의 최대 크기 설정 */
+  margin-bottom: 30px; /* 이미지 아래에 여백 추가 */
+}
+
+.blank span {
+  font-size: 1.7vw;
+  color: #000;
 }
 
 .grey{
     border-radius: 13px;
-    width: 13.5vw;
+    width: 13vw;
 height: 28vh;
 flex-shrink: 0;
-background-color: grey;
+background-color: #aeacac;
+align-self:flex-start;
 }
 
 
